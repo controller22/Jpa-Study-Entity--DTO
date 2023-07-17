@@ -15,7 +15,6 @@ public class ResPostDTO {
     private String content;
     private Integer userIdx;
 
-
     public static ResPostDTO fromEntity(PostEntity postEntity) {
         return new  ResPostDTO(postEntity.getTitle(), postEntity.getContent(),postEntity.getIdx());
     }

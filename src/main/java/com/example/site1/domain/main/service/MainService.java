@@ -21,6 +21,7 @@ public class MainService {
 
         List<UserEntity> userEntityList = userRepository.findAll();
 
+        // entity->dto
         List<ResMainDTO> resMainDTOList = userEntityList
                 .stream()
                 .map((userEntity) -> ResMainDTO.fromEntity(userEntity))

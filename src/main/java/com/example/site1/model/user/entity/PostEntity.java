@@ -18,17 +18,14 @@ public class PostEntity {
     @Column(name="idx", nullable = false ,unique = true)
     private Integer idx;
 
-
-    @Column(name="title")
+    @Column(name="title", nullable = false)
     private String title;
-    @Column(name="content")
+    @Column(name="content", nullable = false)
     private String content;
-    @Column(name = "user_idx")
+    @Column(name = "user_idx", nullable = false)
     private String userIdx;
     @Override
     public String toString() {
         return "PostEntity [idx=" + idx + ", title=" + title + ", content=" + content + ", userIdx=" + userIdx + "]";
     }
-    
-    
 }

@@ -18,6 +18,7 @@ public class PostService {
     public List<ResPostDTO> getPostPageData() {
         List<PostEntity> findPostAll = postRepository.findAll();
 
+        // entity->dto
         List<ResPostDTO> ResPostDTOList = findPostAll
                 .stream()
                 .map((PostEntity) -> ResPostDTO.fromEntity(PostEntity))

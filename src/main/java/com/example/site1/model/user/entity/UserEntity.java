@@ -34,8 +34,4 @@ public class UserEntity {
     public String toString() {
         return "UserEntity [idx=" + idx + ", id=" + id + ", password=" + password + "]";
     }
-
-   
-    
-
 }
